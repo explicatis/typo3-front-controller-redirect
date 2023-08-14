@@ -22,8 +22,11 @@ class RewriteTypo3FrontControllerCommand extends Command
             copy(__DIR__ . '/../../new_index.php', 'public/index.php');
         } catch (\Throwable $throwable) {
             $io->error('Error occured: ' . $throwable->getMessage());
+
+            return 1;
         }
         $output->writeln('done');
+
         return 0;
     }
 }
