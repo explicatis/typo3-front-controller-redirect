@@ -17,5 +17,10 @@
     "require": {
         "php": "^8.1",
         "symfony/console": "^5.4 || ^6.3"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "front_controller_redirect_command"
+        }
     }
 }
