@@ -1,7 +1,7 @@
 {
     "name": "explicatis/typo3-front-controller-redirect",
     "description": "Change TYPO3 front controller to reroute backend calls",
-    "type": "typo3-cms-extension",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -11,17 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Explicatis\\Typo3FrontControllerRedirect\\": "Classes/"
+            "Explicatis\\Typo3FrontControllerRedirect\\": "src/"
         }
     },
     "require": {
         "php": "^8.1",
         "symfony/console": "^5.4 || ^6.3",
         "typo3/cms-core": "^11.5"
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "front_controller_redirect_command"
-        }
     }
 }
