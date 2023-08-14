@@ -6,6 +6,6 @@ class RewriteTypo3FrontController
 {
     public static function rewrite(): void
     {
-        copy(__DIR__ . '/../../new_index.php', 'public/index.php');
+        copy(__DIR__ . '/../new_index.php', 'public/index.php');
     }
 }
