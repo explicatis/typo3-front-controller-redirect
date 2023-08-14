@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Explicatis\Typo3FrontControllerRedirect\:
+        resource: '../Classes/*'
+
+    Explicatis\Typo3FrontControllerRedirect\Command\RewriteTypo3FrontControllerCommand:
+        tags:
+            - name: 'console.command'
+              command: 'explicatis:rewritefrontcontroller'
